@@ -1,0 +1,37 @@
+{
+  "1": [
+    {
+      "nombre": "Midnights",
+      "artista": "Taylor Swift",
+      "genero": "Pop"
+    }
+  ],
+  "2": [
+    {
+      "nombre": "reputation",
+      "artista": "Taylor Swift",
+      "genero": "Pop"
+    }
+  ],
+  "3": [
+    {
+      "nombre": "Lover",
+      "artista": "Taylor Swift",
+      "genero": "Pop"
+    }
+  ],
+  "4": [
+    {
+      "nombre": "1989",
+      "artista": "Taylor Swift",
+      "genero": "Pop"
+    }
+  ],
+  "8": [
+    {
+      "nombre": "Red",
+      "artista": "Taylor Swift",
+      "genero": "Pop"
+    }
+  ]
+}
