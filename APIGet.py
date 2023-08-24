@@ -2,11 +2,11 @@
 from fastapi import FastAPI
 
 # crear el objeto a partir de la clase
-APIGet = FastAPI()
+APIGetCD = FastAPI()
 APITaylor = FastAPI()
 
 # utlizar la funcion get con el objeto
-@APIGet.get("/CD")
+@APIGetCD.get("/CD")
 
 # crear la funcion asincrona "imprimir"
 async def CD(): # asíncrona para que siempre esté disponible
@@ -16,7 +16,7 @@ async def CD(): # asíncrona para que siempre esté disponible
             4:[{"nombre":"1989", "artista":"Taylor Swift", "genero":"Pop"}],
             5:[{"nombre":"Taylor Swift", "artista":"Taylor Swift", "genero":"Country"}],
             6:[{"nombre":"Fearless", "artista":"Taylor Swift", "genero":"Country"}],
-            7:[{"nombre":"Fearless", "artista":"Taylor Swift", "genero":"Country"}],
+            7:[{"nombre":"Speak Now", "artista":"Taylor Swift", "genero":"Country"}],
             8:[{"nombre":"Red", "artista":"Taylor Swift", "genero":"Pop"}],
             9:[{"nombre":"folklore", "artista":"Taylor Swift", "genero":"Indie"}],
             10:[{"nombre":"evermore", "artista":"Taylor Swift", "genero":"Indie"}],
@@ -211,7 +211,7 @@ async def CD(): # asíncrona para que siempre esté disponible
             199:[{"nombre":"Pink Friday...Roman Reloaded", "artista":"Nicki Minaj", "genero":"Hip-Hop"}],
             200:[{"nombre":"Queen Radio: Volume 1", "artista":"Nicki Minaj", "genero":"Hip-Hop"}]}
 
-@APIGet.get("/CD/Taylor")
+@APIGetCD.get("/CD/Taylor")
 async def TaylorSwift(): # asíncrona para que siempre esté disponible
     return {1:[{"nombre":"Midnights", "artista":"Taylor Swift", "genero":"Pop"}],
             2:[{"nombre":"reputation", "artista":"Taylor Swift", "genero":"Pop"}],
@@ -219,18 +219,92 @@ async def TaylorSwift(): # asíncrona para que siempre esté disponible
             4:[{"nombre":"1989", "artista":"Taylor Swift", "genero":"Pop"}],
             5:[{"nombre":"Taylor Swift", "artista":"Taylor Swift", "genero":"Country"}],
             6:[{"nombre":"Fearless", "artista":"Taylor Swift", "genero":"Country"}],
-            7:[{"nombre":"Fearless", "artista":"Taylor Swift", "genero":"Country"}],
+            7:[{"nombre":"Speak Now", "artista":"Taylor Swift", "genero":"Country"}],
             8:[{"nombre":"Red", "artista":"Taylor Swift", "genero":"Pop"}],
             9:[{"nombre":"folklore", "artista":"Taylor Swift", "genero":"Indie"}],
             10:[{"nombre":"evermore", "artista":"Taylor Swift", "genero":"Indie"}]}
 
-@APIGet.get("/CD/Taylor/Pop")
-async def TaylorSwift(): # asíncrona para que siempre esté disponible
+@APIGetCD.get("/CD/ROSALIA")
+async def Rosalia(): # asíncrona para que siempre esté disponible
+    return {1:[{"nombre":"Los Angeles", "artista":"ROSALIA", "genero":"Indie"}],
+            2:[{"nombre":"El Mal Querer", "artista":"ROSALIA", "genero":"Alternative"}],
+            3:[{"nombre":"MOTOMAMI", "artista":"ROSALIA", "genero":"Pop"}]}
+
+@APIGetCD.get("/CD/Taylor/Pop")
+async def TaylorPop(): # asíncrona para que siempre esté disponible
     return {1:[{"nombre":"Midnights", "artista":"Taylor Swift", "genero":"Pop"}],
             2:[{"nombre":"reputation", "artista":"Taylor Swift", "genero":"Pop"}],
             3:[{"nombre":"Lover", "artista":"Taylor Swift", "genero":"Pop"}],
             4:[{"nombre":"1989", "artista":"Taylor Swift", "genero":"Pop"}],
             8:[{"nombre":"Red", "artista":"Taylor Swift", "genero":"Pop"}]}
+
+@APIGetCD.get("/CD/ROSALIA/Pop")
+async def RosaliaPop(): # asíncrona para que siempre esté disponible
+    return {1:[{"nombre":"MOTOMAMI", "artista":"ROSALIA", "genero":"Pop"}]}
+
+@APIGetCD.get("/CD/LDR")
+async def LDR(): # asíncrona para que siempre esté disponible
+    return {1:[{"nombre":"Did you know that there's a tunnel under Ocean Blvd", "artista":"Lana del Rey", "genero":"Alternative"}],
+            2:[{"nombre":"Blue Banisters", "artista":"Lana del Rey", "genero":"Alternative"}],
+            3:[{"nombre":"Chemtrails Over The Country Club", "artista":"Lana del Rey", "genero":"Alternative"}],
+            4:[{"nombre":"Norman Fucking Rockwell", "artista":"Lana del Rey", "genero":"Alternative"}],
+            5:[{"nombre":"Lust For Life", "artista":"Lana del Rey", "genero":"Alternative"}],
+            6:[{"nombre":"Honeymoon", "artista":"Lana del Rey", "genero":"Alternative"}],
+            7:[{"nombre":"Ultraviolence", "artista":"Lana del Rey", "genero":"Alternative"}],
+            8:[{"nombre":"Born to Die", "artista":"Lana del Rey", "genero":"Alternative"}],
+            9:[{"nombre":"Paradise", "artista":"Lana del Rey", "genero":"Alternative"}]}
+
+@APIGetCD.get("/CD/BebeRexha")
+async def BebeRexha(): # asíncrona para que siempre esté disponible
+    return {1:[{"nombre":"I Don't Wanna Grow Up", "artista":"Bebe Rexha", "genero":"Pop"}],
+            2:[{"nombre":"All Your Fault Pt. 1", "artista":"Bebe Rexha", "genero":"Pop"}],
+            3:[{"nombre":"All Your Fault Pt. 2", "artista":"Bebe Rexha", "genero":"Pop"}],
+            4:[{"nombre":"Expectations", "artista":"Bebe Rexha", "genero":"Pop"}],
+            5:[{"nombre":"Better Mistakes", "artista":"Bebe Rexha", "genero":"Pop"}],
+            6:[{"nombre":"Bebe", "artista":"Bebe Rexha", "genero":"Pop"}]}
+
+@APIGetCD.get("/CD/Gaga")
+async def Gaga(): # asíncrona para que siempre esté disponible
+    return {1:[{"nombre":"A Star Is Born Soundtrack", "artista":"Lady Gaga", "genero":"Soundtrack"}],
+            2:[{"nombre":"Love For Sale (Deluxe)", "artista":"Lady Gaga", "genero":"Jazz"}],
+            3:[{"nombre":"Chromatica", "artista":"Lady Gaga", "genero":"Pop"}],
+            4:[{"nombre":"Joanne", "artista":"Lady Gaga", "genero":"Indie"}],
+            5:[{"nombre":"Cheek to Cheek", "artista":"Lady Gaga", "genero":"Jazz"}],
+            6:[{"nombre":"ARTPOP", "artista":"Lady Gaga", "genero":"Pop"}],
+            7:[{"nombre":"Born this Way", "artista":"Lady Gaga", "genero":"Pop"}],
+            8:[{"nombre":"The Fame Monster", "artista":"Lady Gaga", "genero":"Pop"}],
+            9:[{"nombre":"The Fame", "artista":"Lady Gaga", "genero":"Pop"}]}
+
+@APIGetCD.get("/CD/Gaga/Pop")
+async def GagaPop(): # asíncrona para que siempre esté disponible
+    return {1:[{"nombre":"Chromatica", "artista":"Lady Gaga", "genero":"Pop"}],
+            2:[{"nombre":"ARTPOP", "artista":"Lady Gaga", "genero":"Pop"}],
+            3:[{"nombre":"Born this Way", "artista":"Lady Gaga", "genero":"Pop"}],
+            4:[{"nombre":"The Fame Monster", "artista":"Lady Gaga", "genero":"Pop"}],
+            5:[{"nombre":"The Fame", "artista":"Lady Gaga", "genero":"Pop"}]}
+
+@APIGetCD.get("/CD/Poppy")
+async def Poppy(): # asíncrona para que siempre esté disponible
+    return {1:[{"nombre":"Bubblebath", "artista":"Poppy", "genero":"Pop"}],
+            2:[{"nombre":"Poppy.Computer", "artista":"Poppy", "genero":"Pop"}],
+            3:[{"nombre":"Am I a Girl?", "artista":"Poppy", "genero":"Pop"}],
+            4:[{"nombre":"Choke", "artista":"Poppy", "genero":"Experimental"}],
+            5:[{"nombre":"I Disagree", "artista":"Poppy", "genero":"Rock"}],
+            6:[{"nombre":"A Very Poppy Christmas", "artista":"Poppy", "genero":"Rock"}],
+            7:[{"nombre":"EAT (NXT Soundtrack)", "artista":"Poppy", "genero":"Rock"}],
+            8:[{"nombre":"Flux", "artista":"Poppy", "genero":"Rock"}],
+            9:[{"nombre":"Stagger", "artista":"Poppy", "genero":"Rock"}],
+            10:[{"nombre":"Knockoff", "artista":"Poppy", "genero":"Rock"}]}
+
+@APIGetCD.get("/CD/Poppy/Rock")
+async def PoppyRock(): # asíncrona para que siempre esté disponible
+    return {1:[{"nombre":"I Disagree", "artista":"Poppy", "genero":"Rock"}],
+            2:[{"nombre":"A Very Poppy Christmas", "artista":"Poppy", "genero":"Rock"}],
+            3:[{"nombre":"EAT (NXT Soundtrack)", "artista":"Poppy", "genero":"Rock"}],
+            4:[{"nombre":"Flux", "artista":"Poppy", "genero":"Rock"}],
+            5:[{"nombre":"Stagger", "artista":"Poppy", "genero":"Rock"}],
+            6:[{"nombre":"Knockoff", "artista":"Poppy", "genero":"Rock"}]}
+
 
 # LEVANTAR EL SERVIDOR UVICORN
 # uvicorn [nombre_archivo]:[nombre_objeto] --reload
