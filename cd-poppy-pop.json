@@ -1,0 +1,72 @@
+{
+  "1": [
+    {
+      "nombre": "Bubblebath",
+      "artista": "Poppy",
+      "genero": "Pop"
+    }
+  ],
+  "2": [
+    {
+      "nombre": "Poppy.Computer",
+      "artista": "Poppy",
+      "genero": "Pop"
+    }
+  ],
+  "3": [
+    {
+      "nombre": "Am I a Girl?",
+      "artista": "Poppy",
+      "genero": "Pop"
+    }
+  ],
+  "4": [
+    {
+      "nombre": "Choke",
+      "artista": "Poppy",
+      "genero": "Experimental"
+    }
+  ],
+  "5": [
+    {
+      "nombre": "I Disagree",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "6": [
+    {
+      "nombre": "A Very Poppy Christmas",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "7": [
+    {
+      "nombre": "EAT (NXT Soundtrack)",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "8": [
+    {
+      "nombre": "Flux",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "9": [
+    {
+      "nombre": "Stagger",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "10": [
+    {
+      "nombre": "Knockoff",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ]
+}

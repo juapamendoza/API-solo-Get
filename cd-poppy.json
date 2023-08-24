@@ -1,0 +1,44 @@
+{
+  "1": [
+    {
+      "nombre": "I Disagree",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "2": [
+    {
+      "nombre": "A Very Poppy Christmas",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "3": [
+    {
+      "nombre": "EAT (NXT Soundtrack)",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "4": [
+    {
+      "nombre": "Flux",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "5": [
+    {
+      "nombre": "Stagger",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ],
+  "6": [
+    {
+      "nombre": "Knockoff",
+      "artista": "Poppy",
+      "genero": "Rock"
+    }
+  ]
+}

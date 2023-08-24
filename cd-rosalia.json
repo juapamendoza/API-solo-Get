@@ -1,0 +1,23 @@
+{
+  "1": [
+    {
+      "nombre": "Los Angeles",
+      "artista": "ROSALIA",
+      "genero": "Indie"
+    }
+  ],
+  "2": [
+    {
+      "nombre": "El Mal Querer",
+      "artista": "ROSALIA",
+      "genero": "Alternative"
+    }
+  ],
+  "3": [
+    {
+      "nombre": "MOTOMAMI",
+      "artista": "ROSALIA",
+      "genero": "Pop"
+    }
+  ]
+}
